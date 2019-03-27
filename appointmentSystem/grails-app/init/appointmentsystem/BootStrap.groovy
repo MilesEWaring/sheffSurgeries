@@ -31,6 +31,20 @@ class BootStrap {
 		dateRegistered: new Date ('20/06/2015'),
 		patientPhone: '07791 239239').save()
 
+	def PamBeasly = new Receptionist(
+		recepName: 'Pamela Beasly',
+		recepEmail: 'PamelaBeasly@gmail.com',
+		recepUsername: 'PamBees',
+		recepPassword: 'PamKnees',
+		recepPhone: '01212 882881').save()
+
+	def BenYardley = new Nurse(
+		nurseName: 'Ben Yardley',
+		qualifications: '1st Degree Sheffield Hallam',
+		nurseEmail: 'BenYardley@gmail.com',
+		nurseOffice: 'H113',
+		nursePhone: '01212 882894').save()
+
 	
     }
     def destroy = {
