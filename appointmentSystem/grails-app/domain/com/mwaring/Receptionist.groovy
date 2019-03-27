@@ -7,7 +7,7 @@ class Receptionist {
 	String recepPassword
 	long recepPhone
 
-
+	static belongsTo=[Surgery]
     	static constraints = {
 
 	recepName nullable: false, blank: false

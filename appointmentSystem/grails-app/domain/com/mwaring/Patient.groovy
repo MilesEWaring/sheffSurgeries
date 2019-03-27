@@ -10,8 +10,7 @@ class Patient {
 	Date dateRegistered
 	long patientPhone
 	
-	
-
+	static hasMany=[prescription:Prescription, surgerys:Surgery, doctors:Doctor]
     	static constraints = {
 		patientName nullable: false, blank: false
 		patientAddress nullable: false, blank: false
@@ -20,7 +19,7 @@ class Patient {
 		patientID nullable: false, blank: false
 		dateRegistered nullable: false, blank: false
 		patientPhone nullable: false, blank: false
-	
+
 	
     	}
 }

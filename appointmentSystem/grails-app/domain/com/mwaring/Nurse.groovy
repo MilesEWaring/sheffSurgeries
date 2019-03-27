@@ -7,7 +7,7 @@ class Nurse {
 	String nurseEmail
 	String nurseOffice
 	long nursePhone
-
+	static belongsTo=[Surgery,Doctor]
     	static constraints = {
 
 		nurseName nullable: false, blank: false

@@ -11,7 +11,7 @@ class Surgery {
 	float openingTime
 	float closingTime
 	
-	
+	static hasMany=[receptionists:Receptionist,doctors:Doctor,nurses:Nurse,patients:Patient,appointments:Appointment]
     	static constraints = {
 
 		name nullable: false, blank: false
