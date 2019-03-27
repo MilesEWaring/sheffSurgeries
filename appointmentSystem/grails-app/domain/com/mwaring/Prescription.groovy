@@ -3,13 +3,15 @@ package com.mwaring
 class Prescription {
 
 
-	String pharmacyName
-	int prescripNumber
-	String medicine
-	float totalCost
-	Date dateIssued
-	Boolean patientPaying
-	static belongsTo=[Doctor,Patient]
+	String pharmacyName;
+	int prescripNumber;
+	String medicine;
+	float totalCost;
+	Date dateIssued;
+	Boolean patientPaying;
+
+	
+
 	String toString(){
 	
 		return pharmacyName

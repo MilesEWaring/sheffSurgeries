@@ -10,7 +10,7 @@ class Patient {
 	Date dateRegistered
 	long patientPhone
 	
-	static hasMany=[prescription:Prescription, surgerys:Surgery, doctors:Doctor]
+	static hasMany=[prescriptions:Prescription, surgerys:Surgery, doctors:Doctor]
 
 	String toString(){
 	

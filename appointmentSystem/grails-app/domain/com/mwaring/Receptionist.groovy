@@ -7,7 +7,7 @@ class Receptionist {
 	String recepPassword
 	long recepPhone
 
-	static belongsTo=[Surgery]
+	
 	String toString(){
 	
 		return recepName

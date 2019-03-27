@@ -11,7 +11,7 @@ class Doctor {
 	long doctorPhone
 	String bio
 	static hasMany=[prescriptions:Prescription,nurses:Nurse,patients:Patient]
-	static belongsTo=[Surgery]
+
 	String toString(){
 	
 		return fullName

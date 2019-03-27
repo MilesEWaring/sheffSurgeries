@@ -6,9 +6,8 @@ class Appointment {
 	float appTime
 	int appDuration
 	String roomNumber
-
-	static belongsTo=[Patient,Doctor,Surgery]
 	static hasMany=[doctors:Doctor]
+	
 
 	String toString(){
 	
