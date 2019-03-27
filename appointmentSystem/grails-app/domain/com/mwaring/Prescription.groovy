@@ -10,7 +10,14 @@ class Prescription {
 	Date dateIssued
 	Boolean patientPaying
 	static belongsTo=[Doctor,Patient]
+	String toString(){
+	
+		return pharmacyName
+
+	}
         static constraints = {
+
+
 
 	pharmacyName nullable: false, blank: false
     	prescripNumber nullable: false, blank: false

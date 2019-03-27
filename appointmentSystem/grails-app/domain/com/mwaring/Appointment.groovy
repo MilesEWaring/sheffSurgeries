@@ -10,6 +10,12 @@ class Appointment {
 	static belongsTo=[Patient,Doctor,Surgery]
 	static hasMany=[doctors:Doctor]
 
+	String toString(){
+	
+		return appDate
+
+	}
+
     	static constraints = {
 		appDate nullable: false, blank: false
 		appTime nullable: false, blank: false

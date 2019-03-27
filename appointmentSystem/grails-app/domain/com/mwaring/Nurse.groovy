@@ -8,6 +8,12 @@ class Nurse {
 	String nurseOffice
 	long nursePhone
 	static belongsTo=[Surgery,Doctor]
+
+	String toString(){
+	
+		return nurseName
+
+	}
     	static constraints = {
 
 		nurseName nullable: false, blank: false
