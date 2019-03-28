@@ -8,9 +8,10 @@ class Patient {
 	Date patientDob
 	String patientID
 	Date dateRegistered
-	long patientPhone
+	String patientPhone
 	
 	static hasMany=[prescriptions:Prescription, surgerys:Surgery, doctors:Doctor]
+	static belongsTo=[Surgery]
 
 	String toString(){
 	

@@ -6,7 +6,7 @@ class Nurse {
 	String qualifications
 	String nurseEmail
 	String nurseOffice
-	long nursePhone
+	String nursePhone
 	static hasMany=[doctors:Doctor]
 	static belongsTo=[Doctor]
 

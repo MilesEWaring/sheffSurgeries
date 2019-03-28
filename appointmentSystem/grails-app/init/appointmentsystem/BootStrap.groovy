@@ -3,14 +3,7 @@ package com.mwaring
 class BootStrap {
 
     def init = { servletContext ->
-	def HallamHouse = new Surgery(
-		name: 'Hallam House',
-		address: '23 Cantor Road',
-		postcode: 'S3 1AQ',
-		telephone: '01212882882',
-		numberOfPatients: 10,
-		description: 'A surgery based in the middle of Sheffield mainly for Sheffield Hallam students',
-		openingTime: '08.30').save()
+
 
 	def RajeshKoothrapali = new Doctor(
 		fullName: 'Rajesh Koothrapali',
@@ -21,6 +14,16 @@ class BootStrap {
 		doctorOffice: 'H103',
 		doctorPhone: '01212822883',
 		bio: 'I am a very smart doctor who can do a surgery').save()
+	
+	def HallamHouse = new Surgery(
+		name: 'Hallam House',
+		address: '23 Cantor Road',
+		postcode: 'S3 1AQ',
+		telephone: '01212882882',
+		numberOfPatients: 10,
+		description: 'A surgery based in the middle of Sheffield mainly for Sheffield Hallam students',
+		openingTime: '08.30').save()
+
 
 	def McDevvo = new Patient(
 		patientName: 'MC Devvo',
@@ -62,11 +65,11 @@ def prescription1 = new Prescription(
 
 	
 			
-	//RajeshKoothrapali.addToAppointments(appointment1)
+	RajeshKoothrapali.addToAppointments(appointment1)
 	HallamHouse.addToReceptionists(PamBeasly)
 	McDevvo.addToPrescriptions(prescription1)
 	HallamHouse.addToNurses(BenYardley)
-	//RajeshKoothrapali.addToPrescriptions(prescription1)
+	RajeshKoothrapali.addToPrescriptions(prescription1)
 	HallamHouse.addToAppointments(appointment1)
 	HallamHouse.addToDoctors(RajeshKoothrapali)
 

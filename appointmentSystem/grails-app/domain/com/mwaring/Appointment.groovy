@@ -3,10 +3,10 @@ package com.mwaring
 class Appointment {
 
 	Date appDate
-	float appTime
+	double appTime
 	int appDuration
 	String roomNumber
-	static hasMany=[doctors:Doctor]
+	
 	
 
 	String toString(){
@@ -17,7 +17,7 @@ class Appointment {
 
     	static constraints = {
 		appDate nullable: false, blank: false
-		appTime nullable: false, blank: false
+		appTime nullable: false, blank: false, scale: 2
 		appDuration nullable: false, blank: false
 		roomNumber nullable: false, blank: false
 	
