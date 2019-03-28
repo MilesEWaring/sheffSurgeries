@@ -10,7 +10,10 @@ class Prescription {
 	Date dateIssued;
 	Boolean patientPaying;
 
-	
+	static hasMany=[patients:Patient, doctors:Doctor]
+
+	static belongsTo=[Doctor]
+
 
 	String toString(){
 	

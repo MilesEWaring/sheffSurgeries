@@ -7,6 +7,7 @@ class Receptionist {
 	String recepPassword
 	String recepPhone
 	
+	static hasMany=[surgerys:Surgery]
 	static belongsTo =[Surgery]
 	
 	String toString(){

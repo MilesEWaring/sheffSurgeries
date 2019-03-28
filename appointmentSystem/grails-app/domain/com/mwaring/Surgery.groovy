@@ -12,7 +12,14 @@ class Surgery {
 	double closingTime
 	
 	static hasMany=[receptionists:Receptionist,doctors:Doctor,nurses:Nurse,patients:Patient,appointments:Appointment]
-    	static constraints = {
+    	
+	String toString(){
+	
+		return name
+
+	}
+
+	static constraints = {
 
 		name nullable: false, blank: false
 		address nullable: false, blank: false

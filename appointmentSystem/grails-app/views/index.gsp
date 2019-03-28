@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Sheffield Surgeries | Home Page</title>
 </head>
 <body>
 <content tag="nav">
