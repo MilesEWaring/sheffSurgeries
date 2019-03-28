@@ -3,7 +3,7 @@ package com.mwaring
 class BootStrap {
 
     def init = { servletContext ->
-
+	/*
 
 	def RajeshKoothrapali = new Doctor(
 		fullName: 'Rajesh Koothrapali',
@@ -139,7 +139,7 @@ class BootStrap {
 	KellamHouse.addToAppointments(appointment2)
 	KellamHouse.addToDoctors(MilesWaring)
 
-
+	*/
 	
     }
     def destroy = {
