@@ -16,7 +16,7 @@
 
 <body>
 
-
+	<g:loginToggle/>
 
 <g:layoutBody/>
 
