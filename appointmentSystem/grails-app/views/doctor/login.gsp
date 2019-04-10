@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name = "layout" content="main"/>
-	<title>Receptionist Login</title>
+	<title>Doctor Login</title>
 
 	<asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
 
@@ -27,10 +27,10 @@
       			<table>
         			<tr class="prop">
           				<td class="name">
-            					<label for="username">User Name:</label>
+            					<label for="DoctorUsername">User Name:</label>
           				</td>
           				<td class="value">
-            					<input type="text" id="username" name="username" value="">
+            					<input type="text" id="DoctorUsername" name="DoctorUsername" value="">
           				</td></tr>
         			<tr class="prop">
           				<td class="name">

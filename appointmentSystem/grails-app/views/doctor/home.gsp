@@ -59,10 +59,10 @@
 	</div>
 	<nav class="nav nav-pills flex-column flex-sm-row">
 	  <a class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a>
-	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Doctor" action="create">Add Doctor</g:link></a>
-	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Nurse" action="create">Add Nurse</g:link></a>
-	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Patient" action="create">Add Patient</g:link></a>
-	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Receptionist" action="create">Add Receptionist</g:link> </a>
+	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Prescription" action="create">Create Prescription</g:link></a>
+	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Prescription" action="show">Show Prescription</g:link></a>
+	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Patient" action="show">Show Patient</g:link></a>
+	  <a class="flex-sm-fill text-sm-center nav-link"><g:link controller="Appointment" action="show">Show Appointment</g:link> </a>
 	</nav>
 	<div class="BannerCarousel">
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
